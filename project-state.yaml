@@ -1,0 +1,39 @@
+project_id: dream-harbor-finance
+mode: guided
+current_phase: sdlc-build
+requirements_version: 1.0
+gate_status: approved
+dt_handoff: approved
+sdlc_release: pending
+final_acceptance: pending
+confirmed:
+  - Traditional-Chinese educational game for elementary school students
+  - Two playable stages; each has an interactive finance challenge and a key-gated exit
+  - Show a score for each stage and a final learning-progress summary
+  - Use Godot 4.7.2 and Blender 5.3; export a static web build suitable for GitHub Pages
+  - Gameplay concept E, Dream Harbor Night Walker, selected by user
+  - Visual direction 1, Gothic Puppet Theater, selected by user
+assumptions:
+  - Balanced education profile: L 0.40, E 0.20, M 0.15, A 0.25, guessing penalty 0.15, overload penalty 0.10
+  - Fictional currency and fictional investment options only; no real financial advice or user data upload
+  - GitHub Pages deployment is prepared locally; no push or external publication is requested
+open_questions: []
+artifacts:
+  brief: project-brief.md
+  decisions: decision-log.md
+  changes: change-log.md
+  traceability: requirements-traceability.md
+  skill_application: SKILLS_USED.md
+  prompts_today: PROMPTS_TODAY.md
+required_tests:
+  - Godot headless project import and parse
+  - Godot HTML5 export
+  - Browser smoke verification of two-level flow and responsive controls
+passed_tests:
+  - Godot 4.7.2 headless import and GDScript parse completed
+  - Godot Web release export completed to docs/
+  - Local HTTP server returned docs/index.html with the expected game title
+known_limitations:
+  - Blender Toolkit WebSocket addon/config is not present; Blender native headless Python workflow is used
+  - Browser gameplay flow has not been smoke-verified
+  - GitHub remote push and Pages publication are pending
