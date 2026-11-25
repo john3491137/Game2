@@ -22,6 +22,14 @@
 3. 把此專案推送至 GitHub。在倉庫 **Settings → Pages** 將來源設為 **Deploy from a branch**，選擇分支根目錄中的 `/docs`。
 4. 等待 GitHub Pages 部署完成後，開啟顯示的網站網址。
 
+Web 匯出依賴瀏覽器 `fetch()` 載入 `.wasm` 和 `.pck`，不能直接雙擊 `docs/index.html` 用 `file://` 開啟。若在 Pages 尚未部署前要本機預覽，請在專案根目錄執行：
+
+```powershell
+py -m http.server 8000 --directory docs
+```
+
+然後開啟 `http://localhost:8000/`。
+
 Web 匯出使用單執行緒，GitHub Pages 不需要額外的跨來源隔離標頭。瀏覽器需支援 WebAssembly 與 WebGL 2.0。
 
 ## 教學與隱私

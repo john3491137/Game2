@@ -24,6 +24,8 @@
 3. **技能套用要求：**「幫我確認這個專案有套用以下 skills：DT_SDLC_Skill、game-design、blender-skills」。
 4. **視覺與交付選擇：**「用第 1 張，要全部套用，Godot 發佈成網頁」。
 5. **整理需求：**「請為我整理列出今天使用的 prompt」。
+6. **部署目標：**「完成後把遊戲部署在 https://github.com/john3491137/Game2.git」。
+7. **錯誤回報：**「Godot 發生錯誤, Failed to fetch」。
 
 ## 4. 已鎖定的製作條件
 

@@ -35,5 +35,5 @@ passed_tests:
   - Local HTTP server returned docs/index.html with the expected game title
 known_limitations:
   - Blender Toolkit WebSocket addon/config is not present; Blender native headless Python workflow is used
-  - Browser gameplay flow has not been smoke-verified
-  - GitHub remote push and Pages publication are pending
+  - Browser gameplay flow has not been smoke-verified; serve the Web export over HTTP(S), not file://
+  - GitHub Pages must be enabled in repository Settings → Pages with main /docs as the publishing source
