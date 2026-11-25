@@ -1,10 +1,10 @@
 project_id: dream-harbor-finance
 mode: guided
-current_phase: sdlc-build
+current_phase: sdlc-release
 requirements_version: 1.0
 gate_status: approved
 dt_handoff: approved
-sdlc_release: pending
+sdlc_release: deployed
 final_acceptance: pending
 confirmed:
   - Traditional-Chinese educational game for elementary school students
@@ -33,7 +33,13 @@ passed_tests:
   - Godot 4.7.2 headless import and GDScript parse completed
   - Godot Web release export completed to docs/
   - Local HTTP server returned docs/index.html with the expected game title
+  - Published GitHub Pages HTML and WebAssembly endpoints returned HTTP 200
 known_limitations:
   - Blender Toolkit WebSocket addon/config is not present; Blender native headless Python workflow is used
   - Browser gameplay flow has not been smoke-verified; serve the Web export over HTTP(S), not file://
-  - GitHub Pages must be enabled in repository Settings → Pages with main /docs as the publishing source
+deployment:
+  repository: https://github.com/john3491137/Game2.git
+  branch: main
+  source: /docs
+  pages_url: https://john3491137.github.io/Game2/
+  latest_build_status: built

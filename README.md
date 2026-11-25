@@ -19,8 +19,8 @@
    C:\Godot\Godot_v4.7.2-stable_win64.exe --headless --path . --export-release Web docs/index.html
    ```
 
-3. 把此專案推送至 GitHub。在倉庫 **Settings → Pages** 將來源設為 **Deploy from a branch**，選擇分支根目錄中的 `/docs`。
-4. 等待 GitHub Pages 部署完成後，開啟顯示的網站網址。
+3. 本專案已推送至 [Game2 GitHub repository](https://github.com/john3491137/Game2.git)，GitHub Pages 已設為 `main` 分支的 `/docs`。
+4. 開啟已部署遊戲：[小小夢港：理財夜行者](https://john3491137.github.io/Game2/)。
 
 Web 匯出依賴瀏覽器 `fetch()` 載入 `.wasm` 和 `.pck`，不能直接雙擊 `docs/index.html` 用 `file://` 開啟。若在 Pages 尚未部署前要本機預覽，請在專案根目錄執行：
 
